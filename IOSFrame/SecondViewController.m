@@ -18,6 +18,8 @@
 
 NSString * const kCellIdentifier = @"kCellIdentifier";
 
+static NSMutableDictionary *rootTabClassesDic = nil;
+
 @interface SecondViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -74,8 +76,8 @@ NSString * const kCellIdentifier = @"kCellIdentifier";
     
     //测试hookURLRouteBlock
     if (indexPath.row == 1) {
-//        [self setURLHookRouteBlock];
-//        [LDBusMediator routeURL:[NSURL URLWithString:@"productScheme://ADetail"]];
+        [self setURLHookRouteBlock];
+        [LDBusMediator routeURL:[NSURL URLWithString:@"IOSFrame://Fourth"]];
     }
     
     //测试无法找到url的tip提示
@@ -117,6 +119,47 @@ NSString * const kCellIdentifier = @"kCellIdentifier";
     }
     return _tableView;
 }
+
+-(void)setURLHookRouteBlock{
+    [[LDBusNavigator navigator] setHookRouteBlock:^BOOL(UIViewController * _Nonnull controller, UIViewController * _Nullable baseViewController, NavigationMode routeMode) {
+        UIViewController *tabController = [self isViewControllerInTabContainer:controller];
+        if (tabController) {
+            [[LDBusNavigator navigator] showURLController:tabController baseViewController:baseViewController routeMode:NavigationModeShare];
+            return YES;
+        } else {
+            return NO;
+        }
+    }];
+}
+
+-(UIViewController *)isViewControllerInTabContainer:(UIViewController *)controller{
+    if (rootTabClassesDic == nil) {
+        rootTabClassesDic = [[NSMutableDictionary alloc] initWithCapacity:2];
+        UIViewController *rootViewContoller = [UIApplication sharedApplication].delegate.window.rootViewController;
+        if (rootViewContoller && [rootViewContoller isKindOfClass:[UITabBarController class]]) {
+            NSArray *tabControllers = ((UITabBarController *)rootViewContoller).viewControllers;
+            [tabControllers enumerateObjectsUsingBlock:^(UIViewController *_Nonnull viewController, NSUInteger idx, BOOL * _Nonnull stop) {
+                if ([viewController isKindOfClass:[UINavigationController class]]) {
+                    viewController = [((UINavigationController *)viewController).viewControllers objectAtIndex:0];
+                }
+                
+                [rootTabClassesDic setObject:viewController forKey:NSStringFromClass([viewController class])];
+            }];
+        }
+    }
+    
+    if (rootTabClassesDic && rootTabClassesDic.count > 0) {
+        NSString *controllerKey = NSStringFromClass([controller class]);
+        if (controllerKey) {
+            return [rootTabClassesDic objectForKey:controllerKey];
+        } else {
+            return nil;
+        }
+    } else {
+        return nil;
+    }
+}
+
 
 /*
 #pragma mark - Navigation
