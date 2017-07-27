@@ -120,6 +120,7 @@ static NSMutableDictionary *rootTabClassesDic = nil;
     return _tableView;
 }
 
+//拦截跳转，直接跳到tab方法
 -(void)setURLHookRouteBlock{
     [[LDBusNavigator navigator] setHookRouteBlock:^BOOL(UIViewController * _Nonnull controller, UIViewController * _Nullable baseViewController, NavigationMode routeMode) {
         UIViewController *tabController = [self isViewControllerInTabContainer:controller];
