@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE1E7EE7B95F0AC73494150 /* libPods-IOSFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */; };
+		B12E301D1F3D9A7E00F01F92 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B12E301C1F3D9A7E00F01F92 /* Podfile */; };
+		B12E30581F3DB21900F01F92 /* libFourth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E30571F3DB21900F01F92 /* libFourth.a */; };
 		B1D6531B1F298E1300FE33FE /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */; };
 		B1D6531E1F29959500FE33FE /* Model_ForFirst_info.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */; };
 		B1D6535F1F29BCC300FE33FE /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1D653201F29BCC300FE33FE /* config.xml */; };
@@ -51,18 +54,12 @@
 		B1FC2A211F286D9000719091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FC2A1F1F286D9000719091 /* LaunchScreen.storyboard */; };
 		B1FC2A2C1F286D9100719091 /* IOSFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A2B1F286D9100719091 /* IOSFrameTests.m */; };
 		B1FC2A371F286D9100719091 /* IOSFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A361F286D9100719091 /* IOSFrameUITests.m */; };
-		B1FC2A4E1F286E8600719091 /* LDBusMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A471F286E8600719091 /* LDBusMediator.m */; };
-		B1FC2A4F1F286E8600719091 /* LDBusMediatorTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A491F286E8600719091 /* LDBusMediatorTipViewController.m */; };
-		B1FC2A501F286E8600719091 /* LDBusNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A4B1F286E8600719091 /* LDBusNavigator.m */; };
-		B1FC2A511F286E8600719091 /* UIViewController+NavigationTip.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A4D1F286E8600719091 /* UIViewController+NavigationTip.m */; };
 		B1FC2A541F286F4800719091 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A531F286F4800719091 /* FirstViewController.m */; };
 		B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A561F286F5B00719091 /* SecondViewController.m */; };
 		B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A591F286F6D00719091 /* ThirdViewController.m */; };
-		B1FC2A5D1F286F8A00719091 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A5C1F286F8A00719091 /* FourthViewController.m */; };
 		B1FC2A641F28733600719091 /* Connector_First.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A631F28733600719091 /* Connector_First.m */; };
 		B1FC2A671F28735C00719091 /* Connector_Second.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A661F28735C00719091 /* Connector_Second.m */; };
 		B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A691F28737500719091 /* Connector_Third.m */; };
-		B1FC2A6D1F28739000719091 /* Connector_Fourth.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A6C1F28739000719091 /* Connector_Fourth.m */; };
 		B1FC2A711F28814700719091 /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A701F28814700719091 /* FirstDetailViewController.m */; };
 		B1FC2A751F2898D000719091 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A741F2898D000719091 /* UserInfo.m */; };
 /* End PBXBuildFile section */
@@ -84,7 +81,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B1655C8E1F2AECB400BADB6E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.release.xcconfig"; sourceTree = "<group>"; };
+		3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.debug.xcconfig"; sourceTree = "<group>"; };
+		B12E301C1F3D9A7E00F01F92 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B12E30571F3DB21900F01F92 /* libFourth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFourth.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-dyhrvhzhvxjmnifdljoujwweotrz/Build/Products/Debug-iphonesimulator/Fourth/libFourth.a"; sourceTree = "<group>"; };
 		B1D653191F298E1300FE33FE /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		B1D6531C1F29959500FE33FE /* Model_ForFirst_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model_ForFirst_info.h; sourceTree = "<group>"; };
@@ -174,32 +189,18 @@
 		B1FC2A321F286D9100719091 /* IOSFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FC2A361F286D9100719091 /* IOSFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFrameUITests.m; sourceTree = "<group>"; };
 		B1FC2A381F286D9100719091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1FC2A451F286E8600719091 /* LDBusConnectorPrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBusConnectorPrt.h; sourceTree = "<group>"; };
-		B1FC2A461F286E8600719091 /* LDBusMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBusMediator.h; sourceTree = "<group>"; };
-		B1FC2A471F286E8600719091 /* LDBusMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBusMediator.m; sourceTree = "<group>"; };
-		B1FC2A481F286E8600719091 /* LDBusMediatorTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBusMediatorTipViewController.h; sourceTree = "<group>"; };
-		B1FC2A491F286E8600719091 /* LDBusMediatorTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBusMediatorTipViewController.m; sourceTree = "<group>"; };
-		B1FC2A4A1F286E8600719091 /* LDBusNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDBusNavigator.h; sourceTree = "<group>"; };
-		B1FC2A4B1F286E8600719091 /* LDBusNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDBusNavigator.m; sourceTree = "<group>"; };
-		B1FC2A4C1F286E8600719091 /* UIViewController+NavigationTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationTip.h"; sourceTree = "<group>"; };
-		B1FC2A4D1F286E8600719091 /* UIViewController+NavigationTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationTip.m"; sourceTree = "<group>"; };
 		B1FC2A521F286F4800719091 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		B1FC2A531F286F4800719091 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B1FC2A551F286F5B00719091 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B1FC2A561F286F5B00719091 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B1FC2A581F286F6D00719091 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B1FC2A591F286F6D00719091 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		B1FC2A5B1F286F8A00719091 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
-		B1FC2A5C1F286F8A00719091 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 		B1FC2A621F28733600719091 /* Connector_First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_First.h; sourceTree = "<group>"; };
 		B1FC2A631F28733600719091 /* Connector_First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_First.m; sourceTree = "<group>"; };
 		B1FC2A651F28735C00719091 /* Connector_Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Second.h; sourceTree = "<group>"; };
 		B1FC2A661F28735C00719091 /* Connector_Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Second.m; sourceTree = "<group>"; };
 		B1FC2A681F28737500719091 /* Connector_Third.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Third.h; sourceTree = "<group>"; };
 		B1FC2A691F28737500719091 /* Connector_Third.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Third.m; sourceTree = "<group>"; };
-		B1FC2A6B1F28739000719091 /* Connector_Fourth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Fourth.h; sourceTree = "<group>"; };
-		B1FC2A6C1F28739000719091 /* Connector_Fourth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Fourth.m; sourceTree = "<group>"; };
-		B1FC2A6E1F28760C00719091 /* RouterURLInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterURLInfo.h; sourceTree = "<group>"; };
 		B1FC2A6F1F28814700719091 /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
 		B1FC2A701F28814700719091 /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
 		B1FC2A731F2898D000719091 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -213,9 +214,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12E30581F3DB21900F01F92 /* libFourth.a in Frameworks */,
 				B1D6542A1F29D8BE00FE33FE /* libz.tbd in Frameworks */,
 				B1D654251F29D6F600FE33FE /* JavaScriptCore.framework in Frameworks */,
 				B1D654231F29D6EE00FE33FE /* libz.1.tbd in Frameworks */,
+				0BE1E7EE7B95F0AC73494150 /* libPods-IOSFrame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +239,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510E5800E1777C69486CC1FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */,
+				1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1D6531F1F29BCC300FE33FE /* CordovaLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,9 +396,11 @@
 		B1D654211F29D6EE00FE33FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B12E30571F3DB21900F01F92 /* libFourth.a */,
 				B1D654291F29D8BE00FE33FE /* libz.tbd */,
 				B1D654241F29D6F600FE33FE /* JavaScriptCore.framework */,
 				B1D654221F29D6EE00FE33FE /* libz.1.tbd */,
+				3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,12 +410,12 @@
 			children = (
 				B1D6538A1F29D60900FE33FE /* JSPatch */,
 				B1D6531F1F29BCC300FE33FE /* CordovaLib */,
-				B1FC2A441F286E8600719091 /* LDBusMediator */,
 				B1FC2A101F286D9000719091 /* IOSFrame */,
 				B1FC2A2A1F286D9100719091 /* IOSFrameTests */,
 				B1FC2A351F286D9100719091 /* IOSFrameUITests */,
 				B1FC2A0F1F286D9000719091 /* Products */,
 				B1D654211F29D6EE00FE33FE /* Frameworks */,
+				510E5800E1777C69486CC1FD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -422,7 +436,6 @@
 				B1FC2A151F286D9000719091 /* AppDelegate.m */,
 				B1FC2A171F286D9000719091 /* ViewController.h */,
 				B1FC2A181F286D9000719091 /* ViewController.m */,
-				B1FC2A6E1F28760C00719091 /* RouterURLInfo.h */,
 				B1FC2A5E1F2872A700719091 /* FirstGroup */,
 				B1FC2A5F1F2872BB00719091 /* SecondGroup */,
 				B1FC2A601F2872CD00719091 /* ThirdGroup */,
@@ -432,6 +445,7 @@
 				B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */,
 				B1D653831F29CB7700FE33FE /* HLAudioPlayer.h */,
 				B1D653841F29CB7700FE33FE /* HLAudioPlayer.m */,
+				B12E301C1F3D9A7E00F01F92 /* Podfile */,
 				B1FC2A1A1F286D9000719091 /* Main.storyboard */,
 				B1FC2A1D1F286D9000719091 /* Assets.xcassets */,
 				B1FC2A1F1F286D9000719091 /* LaunchScreen.storyboard */,
@@ -469,22 +483,6 @@
 				B1FC2A381F286D9100719091 /* Info.plist */,
 			);
 			path = IOSFrameUITests;
-			sourceTree = "<group>";
-		};
-		B1FC2A441F286E8600719091 /* LDBusMediator */ = {
-			isa = PBXGroup;
-			children = (
-				B1FC2A451F286E8600719091 /* LDBusConnectorPrt.h */,
-				B1FC2A461F286E8600719091 /* LDBusMediator.h */,
-				B1FC2A471F286E8600719091 /* LDBusMediator.m */,
-				B1FC2A481F286E8600719091 /* LDBusMediatorTipViewController.h */,
-				B1FC2A491F286E8600719091 /* LDBusMediatorTipViewController.m */,
-				B1FC2A4A1F286E8600719091 /* LDBusNavigator.h */,
-				B1FC2A4B1F286E8600719091 /* LDBusNavigator.m */,
-				B1FC2A4C1F286E8600719091 /* UIViewController+NavigationTip.h */,
-				B1FC2A4D1F286E8600719091 /* UIViewController+NavigationTip.m */,
-			);
-			path = LDBusMediator;
 			sourceTree = "<group>";
 		};
 		B1FC2A5E1F2872A700719091 /* FirstGroup */ = {
@@ -528,10 +526,6 @@
 		B1FC2A611F2872DC00719091 /* FourthGroup */ = {
 			isa = PBXGroup;
 			children = (
-				B1FC2A6B1F28739000719091 /* Connector_Fourth.h */,
-				B1FC2A6C1F28739000719091 /* Connector_Fourth.m */,
-				B1FC2A5B1F286F8A00719091 /* FourthViewController.h */,
-				B1FC2A5C1F286F8A00719091 /* FourthViewController.m */,
 			);
 			name = FourthGroup;
 			sourceTree = "<group>";
@@ -554,9 +548,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1FC2A3B1F286D9100719091 /* Build configuration list for PBXNativeTarget "IOSFrame" */;
 			buildPhases = (
+				A37AAD82C3EA84AAC27BFD89 /* [CP] Check Pods Manifest.lock */,
 				B1FC2A0A1F286D9000719091 /* Sources */,
 				B1FC2A0B1F286D9000719091 /* Frameworks */,
 				B1FC2A0C1F286D9000719091 /* Resources */,
+				B1655C8E1F2AECB400BADB6E /* Embed Frameworks */,
+				F8EF4F0733911875C6753E6B /* [CP] Embed Pods Frameworks */,
+				B79B58FFB4B05C9333F6DE6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -659,6 +657,7 @@
 				B1D6537E1F29C36900FE33FE /* www in Resources */,
 				B1D6538F1F29D60900FE33FE /* JSPatch.js in Resources */,
 				B1D653871F29CB8200FE33FE /* shake_sound_male.wav in Resources */,
+				B12E301D1F3D9A7E00F01F92 /* Podfile in Resources */,
 				B1D6535F1F29BCC300FE33FE /* config.xml in Resources */,
 				B1D653911F29D62300FE33FE /* demo.js in Resources */,
 			);
@@ -680,6 +679,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A37AAD82C3EA84AAC27BFD89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSFrame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B79B58FFB4B05C9333F6DE6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8EF4F0733911875C6753E6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1FC2A0A1F286D9000719091 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -692,14 +742,10 @@
 				B1D6536A1F29BCC300FE33FE /* CDVCommandQueue.m in Sources */,
 				B1FC2A751F2898D000719091 /* UserInfo.m in Sources */,
 				B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */,
-				B1FC2A4F1F286E8600719091 /* LDBusMediatorTipViewController.m in Sources */,
 				B1FC2A191F286D9000719091 /* ViewController.m in Sources */,
 				B1D653701F29BCC300FE33FE /* CDVTimer.m in Sources */,
-				B1FC2A501F286E8600719091 /* LDBusNavigator.m in Sources */,
 				B1D6536D1F29BCC300FE33FE /* CDVPlugin+Resources.m in Sources */,
-				B1FC2A4E1F286E8600719091 /* LDBusMediator.m in Sources */,
 				B1D6536E1F29BCC300FE33FE /* CDVPlugin.m in Sources */,
-				B1FC2A5D1F286F8A00719091 /* FourthViewController.m in Sources */,
 				B1D653761F29BCC300FE33FE /* NSMutableArray+QueueAdditions.m in Sources */,
 				B1FC2A641F28733600719091 /* Connector_First.m in Sources */,
 				B1D653751F29BCC300FE33FE /* NSDictionary+CordovaPreferences.m in Sources */,
@@ -717,13 +763,11 @@
 				B1D653631F29BCC300FE33FE /* CDVIntentAndNavigationFilter.m in Sources */,
 				B1D653671F29BCC300FE33FE /* CDVUIWebViewNavigationDelegate.m in Sources */,
 				B1D653641F29BCC300FE33FE /* CDVLocalStorage.m in Sources */,
-				B1FC2A511F286E8600719091 /* UIViewController+NavigationTip.m in Sources */,
 				B1D653611F29BCC300FE33FE /* CDVGestureHandler.m in Sources */,
 				B1D653661F29BCC300FE33FE /* CDVUIWebViewEngine.m in Sources */,
 				B1FC2A131F286D9000719091 /* main.m in Sources */,
 				B1D6538E1F29D60900FE33FE /* JPEngine.m in Sources */,
 				B1D653681F29BCC300FE33FE /* CDVAppDelegate.m in Sources */,
-				B1FC2A6D1F28739000719091 /* Connector_Fourth.m in Sources */,
 				B1D6536F1F29BCC300FE33FE /* CDVPluginResult.m in Sources */,
 				B1D653741F29BCC300FE33FE /* CDVWhitelist.m in Sources */,
 				B1FC2A541F286F4800719091 /* FirstViewController.m in Sources */,
@@ -878,6 +922,7 @@
 		};
 		B1FC2A3C1F286D9100719091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -888,6 +933,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ddd.IOSFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -895,6 +944,7 @@
 		};
 		B1FC2A3D1F286D9100719091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -904,6 +954,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ddd.IOSFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";

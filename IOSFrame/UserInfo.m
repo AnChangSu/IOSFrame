@@ -25,7 +25,7 @@
 }
 
 -(nonnull NSString*)description{
-    return @"i am user info";
+    return [NSString stringWithFormat:@"name=%@,school=%@,token=%@",name,school,token];
 }
 
 @end

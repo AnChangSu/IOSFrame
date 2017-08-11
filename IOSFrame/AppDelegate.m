@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "LDBusMediator.h"
 #import "RouterURLInfo.h"
+#import "LDBusMediator.h"
 #import "JPEngine.h"
 
 @interface AppDelegate ()
@@ -17,7 +17,7 @@
 
 @implementation AppDelegate
 
--(void)useJSPath{
+-(void)loadJSPath{
     [JPEngine startEngine];
     NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
     NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
@@ -63,7 +63,7 @@
     
    
     // Override point for customization after application launch.
-    [self useJSPath];
+    [self loadJSPath];
     [self loadTabController];
     return YES;
 }
