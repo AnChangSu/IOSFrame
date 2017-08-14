@@ -8,5 +8,7 @@ target 'IOSFrame' do
 
 pod "Fourth"
 
+pod 'Cordova', '~> 4.4.0'
+
 end
 

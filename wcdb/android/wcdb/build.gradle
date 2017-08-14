@@ -1,0 +1,108 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 12
+        targetSdkVersion 25
+        versionCode 1
+        versionName rootProject.VERSION
+
+        externalNativeBuild {
+            ndkBuild {
+                abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'
+                arguments '-j2'
+
+                def hasBuildInfo = false;
+                if (rootProject.hasProperty("WX_BUILD_REVISION"))
+                    hasBuildInfo = arguments.add('WX_BUILD_REVISION=\'' + rootProject.WX_BUILD_REVISION + '\'')
+                if (rootProject.hasProperty("WX_BUILD_BRANCH"))
+                    hasBuildInfo = arguments.add('WX_BUILD_BRANCH=\'' + rootProject.WX_BUILD_BRANCH + '\'')
+                if (rootProject.hasProperty("WX_BUILD_TIME"))
+                    hasBuildInfo = arguments.add('WX_BUILD_TIME=\'' + rootProject.WX_BUILD_TIME + '\'')
+                if (rootProject.hasProperty("WX_BUILD_JOB"))
+                    hasBuildInfo = arguments.add('WX_BUILD_JOB=\'' + rootProject.WX_BUILD_JOB + '\'')
+                if (hasBuildInfo)
+                    arguments.add('WITH_BUILD_INFO=1')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            jniDebuggable true
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            jni.srcDirs = ['../jni']
+            jniLibs.srcDirs = []
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path rootProject.file('Android.mk')
+        }
+    }
+
+    defaultPublishConfig 'release'
+    //publishNonDefault true
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+android.libraryVariants.all { variant ->
+
+    // emit Javadoc generation task
+    def genJavadocTask = task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
+        description "Generates Javadoc for $variant.name."
+        source = variant.javaCompile.source
+        ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
+        classpath = files(variant.javaCompile.classpath.files) + files(ext.androidJar)
+
+        title = null
+
+        options {
+            memberLevel = JavadocMemberLevel.PUBLIC
+
+            doclet = 'com.google.doclava.Doclava'
+            docletpath = [rootProject.file('gradle/doclava-1.0.6.jar')]
+
+            addStringOption('title', 'WCDB for Android')
+            addStringOption('hdf project.name', 'WCDB for Android')
+            //addStringOption('federate Android', 'http://d.android.com/reference')
+            //addStringOption('federationxml Android', rootProject.file('gradle/android-10.xml').path)
+        }
+    }
+
+    // emit Javadoc bundling task
+    task("bundle${variant.name.capitalize()}Javadoc", type: Jar) {
+        classifier = 'javadoc'
+        from genJavadocTask.destinationDir
+        dependsOn genJavadocTask
+    }
+
+    // emit source bundling task
+    task("bundle${variant.name.capitalize()}Sources", type: Jar) {
+        classifier = 'sources'
+        from variant.javaCompile.source
+    }
+}
+
+apply from: 'bintray.gradle'

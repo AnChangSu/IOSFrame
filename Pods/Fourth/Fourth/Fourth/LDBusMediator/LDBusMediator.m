@@ -66,9 +66,13 @@ static NSMutableDictionary<NSString *, id<LDBusConnectorPrt>> *g_connectorMap = 
 //add anchang
 +(BOOL)routeToWebWithURL:(NSURL*)URL withParameters:(nullable NSDictionary *)params
 {
-//    FirstDetailViewController *controller = [[FirstDetailViewController alloc] init];
-//    controller.startPage = URL.absoluteString;
-//    [[LDBusNavigator navigator] hookShowURLController:controller baseViewController:params[kLDRouteViewControllerKey] routeMode:params[kLDRouteModeKey]?[params[kLDRouteModeKey] intValue]:NavigationModePush];
+    UIViewController *controller = [self viewControllerForURL:[NSURL URLWithString:@"IOSFrame://First_Detail"]];
+    //    FirstDetailViewController *controller = [[FirstDetailViewController alloc] init];
+    //    controller.startPage = URL.absoluteString;
+    if ( [controller respondsToSelector:@selector(setStartPage:)] ) {
+        [controller performSelector:@selector(setStartPage:) withObject:URL.absoluteString];
+    }
+    [[LDBusNavigator navigator] hookShowURLController:controller baseViewController:params[kLDRouteViewControllerKey] routeMode:params[kLDRouteModeKey]?[params[kLDRouteModeKey] intValue]:NavigationModePush];
     
     return YES;
 }
@@ -162,15 +166,15 @@ static NSMutableDictionary<NSString *, id<LDBusConnectorPrt>> *g_connectorMap = 
     __block int queryCount = 0;
     NSDictionary *userParams = [self userParametersWithURL:URL andParameters:params];
     //modify anchang 直接使用key注册和获取connector
-//    [g_connectorMap enumerateKeysAndObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSString * _Nonnull key, id<LDBusConnectorPrt>  _Nonnull connector, BOOL * _Nonnull stop) {
-//        queryCount++;
-//        if([connector respondsToSelector:@selector(connectToOpenURL:params:)]){
-//            returnObj = [connector connectToOpenURL:URL params:userParams];
-//            if(returnObj && [returnObj isKindOfClass:[UIViewController class]]){
-//                *stop = YES;
-//            }
-//        }
-//    }];
+    [g_connectorMap enumerateKeysAndObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSString * _Nonnull key, id<LDBusConnectorPrt>  _Nonnull connector, BOOL * _Nonnull stop) {
+        queryCount++;
+        if([connector respondsToSelector:@selector(connectToOpenURL:params:)]){
+            returnObj = [connector connectToOpenURL:URL params:userParams];
+            if(returnObj && [returnObj isKindOfClass:[UIViewController class]]){
+                *stop = YES;
+            }
+        }
+    }];
     NSArray *array = [URL.host componentsSeparatedByString:@"_"];
     id<LDBusConnectorPrt> connector = [g_connectorMap objectForKey:[array objectAtIndex:0]];
     if ( [connector respondsToSelector:@selector(connectToOpenURL:params:)] ) {

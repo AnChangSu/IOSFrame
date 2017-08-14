@@ -1,12 +1,15 @@
 PODS:
-  - Fourth (0.0.8)
+  - Cordova (4.4.0)
+  - Fourth (0.1.0)
 
 DEPENDENCIES:
+  - Cordova (~> 4.4.0)
   - Fourth
 
 SPEC CHECKSUMS:
-  Fourth: c10c696644a9a970630e70f3011dad83dc92c5dc
+  Cordova: 561576155c420c54441d99b855de12c6e7b51088
+  Fourth: b4b68881b32af8f331fabd2e0ed0ae4e34dc6d03
 
-PODFILE CHECKSUM: e5288fdbd92d6d931c9deaf5be03789980e38e61
+PODFILE CHECKSUM: 25f2e254cb062f17c4ac990b99103c23f3dda081
 
 COCOAPODS: 1.3.1

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Cordova.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Fourth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1DA8D116323C721948728BDE130165B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>429C4EE8462B6313B62A3E7B4F6B6895</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63978271D6C13AF0628942F991EB6158</key>
+		<key>C1B26CF45822E07D9AB99244E48897D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
