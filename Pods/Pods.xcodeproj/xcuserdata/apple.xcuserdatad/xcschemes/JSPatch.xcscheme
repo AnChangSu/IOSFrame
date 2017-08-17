@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '996638386A93F7311D29E0984493477C'
-               BlueprintName = 'Pods-IOSFrame'
+               BlueprintIdentifier = 'FB1B608CA194B526EEF0EC7ADC16F3B0'
+               BlueprintName = 'JSPatch'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-IOSFrame.a'>
+               BuildableName = 'libJSPatch.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

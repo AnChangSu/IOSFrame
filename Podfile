@@ -12,6 +12,8 @@ pod 'First'
 
 pod 'Fourth'
 
+pod 'JSPatch', '~> 1.1.3'
+
 pod 'Cordova', '~> 4.4.0'
 
 end
