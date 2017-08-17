@@ -10,6 +10,8 @@ pod 'Bus'
 
 pod 'First'
 
+pod 'Second'
+
 pod 'Fourth'
 
 pod 'JSPatch', '~> 1.1.3'

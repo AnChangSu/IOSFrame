@@ -12,11 +12,10 @@
 		18EF736D1F45CDCA00526A70 /* libBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736C1F45CDCA00526A70 /* libBus.a */; };
 		18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736E1F45CDD200526A70 /* libAFNetworking.a */; };
 		18EF73791F45D8B300526A70 /* libJSPatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF73781F45D8B300526A70 /* libJSPatch.a */; };
+		18EF73D81F45FF8E00526A70 /* libSecond.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF73D71F45FF8E00526A70 /* libSecond.a */; };
 		B12E301D1F3D9A7E00F01F92 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B12E301C1F3D9A7E00F01F92 /* Podfile */; };
 		B1ADE7D71F4152D100CFD1B8 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ADE7D61F4152D100CFD1B8 /* libCordova.a */; };
 		B1ADE7D91F41531300CFD1B8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1ADE7D81F41531300CFD1B8 /* config.xml */; };
-		B1D6531B1F298E1300FE33FE /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */; };
-		B1D6531E1F29959500FE33FE /* Model_ForFirst_info.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */; };
 		B1D6537E1F29C36900FE33FE /* www in Resources */ = {isa = PBXBuildFile; fileRef = B1D6537D1F29C36900FE33FE /* www */; };
 		B1D653871F29CB8200FE33FE /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1D653861F29CB8200FE33FE /* shake_sound_male.wav */; };
 		B1D653911F29D62300FE33FE /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = B1D653901F29D62300FE33FE /* demo.js */; };
@@ -31,9 +30,7 @@
 		B1FC2A211F286D9000719091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FC2A1F1F286D9000719091 /* LaunchScreen.storyboard */; };
 		B1FC2A2C1F286D9100719091 /* IOSFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A2B1F286D9100719091 /* IOSFrameTests.m */; };
 		B1FC2A371F286D9100719091 /* IOSFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A361F286D9100719091 /* IOSFrameUITests.m */; };
-		B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A561F286F5B00719091 /* SecondViewController.m */; };
 		B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A591F286F6D00719091 /* ThirdViewController.m */; };
-		B1FC2A671F28735C00719091 /* Connector_Second.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A661F28735C00719091 /* Connector_Second.m */; };
 		B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A691F28737500719091 /* Connector_Third.m */; };
 		B1FC2A751F2898D000719091 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A741F2898D000719091 /* UserInfo.m */; };
 		B1FF61EF1F4151FA00FA1F63 /* libFourth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E30571F3DB21900F01F92 /* libFourth.a */; };
@@ -74,6 +71,7 @@
 		18EF736C1F45CDCA00526A70 /* libBus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBus.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/Bus/libBus.a"; sourceTree = "<group>"; };
 		18EF736E1F45CDD200526A70 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		18EF73781F45D8B300526A70 /* libJSPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSPatch.a; path = "Pods/../build/Debug-iphoneos/JSPatch/libJSPatch.a"; sourceTree = "<group>"; };
+		18EF73D71F45FF8E00526A70 /* libSecond.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSecond.a; path = "Pods/../build/Debug-iphoneos/Second/libSecond.a"; sourceTree = "<group>"; };
 		1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.release.xcconfig"; sourceTree = "<group>"; };
 		3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,10 +79,6 @@
 		B12E30571F3DB21900F01F92 /* libFourth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFourth.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-dyhrvhzhvxjmnifdljoujwweotrz/Build/Products/Debug-iphonesimulator/Fourth/libFourth.a"; sourceTree = "<group>"; };
 		B1ADE7D61F4152D100CFD1B8 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCordova.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-dyhrvhzhvxjmnifdljoujwweotrz/Build/Products/Debug-iphonesimulator/Cordova/libCordova.a"; sourceTree = "<group>"; };
 		B1ADE7D81F41531300CFD1B8 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = CordovaLib/config.xml; sourceTree = SOURCE_ROOT; };
-		B1D653191F298E1300FE33FE /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
-		B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
-		B1D6531C1F29959500FE33FE /* Model_ForFirst_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model_ForFirst_info.h; sourceTree = "<group>"; };
-		B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model_ForFirst_info.m; sourceTree = "<group>"; };
 		B1D653771F29BD1400FE33FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B1D6537D1F29C36900FE33FE /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		B1D653861F29CB8200FE33FE /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
@@ -108,12 +102,8 @@
 		B1FC2A321F286D9100719091 /* IOSFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FC2A361F286D9100719091 /* IOSFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFrameUITests.m; sourceTree = "<group>"; };
 		B1FC2A381F286D9100719091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1FC2A551F286F5B00719091 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		B1FC2A561F286F5B00719091 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B1FC2A581F286F6D00719091 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B1FC2A591F286F6D00719091 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		B1FC2A651F28735C00719091 /* Connector_Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Second.h; sourceTree = "<group>"; };
-		B1FC2A661F28735C00719091 /* Connector_Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Second.m; sourceTree = "<group>"; };
 		B1FC2A681F28737500719091 /* Connector_Third.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Third.h; sourceTree = "<group>"; };
 		B1FC2A691F28737500719091 /* Connector_Third.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Third.m; sourceTree = "<group>"; };
 		B1FC2A731F2898D000719091 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -127,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EF73D81F45FF8E00526A70 /* libSecond.a in Frameworks */,
 				18EF73791F45D8B300526A70 /* libJSPatch.a in Frameworks */,
 				18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */,
 				18EF736D1F45CDCA00526A70 /* libBus.a in Frameworks */,
@@ -169,6 +160,7 @@
 		B1D654211F29D6EE00FE33FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18EF73D71F45FF8E00526A70 /* libSecond.a */,
 				18EF73781F45D8B300526A70 /* libJSPatch.a */,
 				18EF736E1F45CDD200526A70 /* libAFNetworking.a */,
 				18EF736C1F45CDCA00526A70 /* libBus.a */,
@@ -217,8 +209,6 @@
 				B1FC2A601F2872CD00719091 /* ThirdGroup */,
 				B1FC2A611F2872DC00719091 /* FourthGroup */,
 				B1FC2A721F28988900719091 /* model */,
-				B1D653191F298E1300FE33FE /* UIView+LayoutMethods.h */,
-				B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */,
 				B12E301C1F3D9A7E00F01F92 /* Podfile */,
 				B1FC2A1A1F286D9000719091 /* Main.storyboard */,
 				B1FC2A1D1F286D9000719091 /* Assets.xcassets */,
@@ -270,12 +260,6 @@
 		B1FC2A5F1F2872BB00719091 /* SecondGroup */ = {
 			isa = PBXGroup;
 			children = (
-				B1FC2A651F28735C00719091 /* Connector_Second.h */,
-				B1FC2A661F28735C00719091 /* Connector_Second.m */,
-				B1D6531C1F29959500FE33FE /* Model_ForFirst_info.h */,
-				B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */,
-				B1FC2A551F286F5B00719091 /* SecondViewController.h */,
-				B1FC2A561F286F5B00719091 /* SecondViewController.m */,
 			);
 			name = SecondGroup;
 			sourceTree = "<group>";
@@ -503,15 +487,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1FC2A751F2898D000719091 /* UserInfo.m in Sources */,
-				B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */,
 				B1FC2A191F286D9000719091 /* ViewController.m in Sources */,
-				B1D6531B1F298E1300FE33FE /* UIView+LayoutMethods.m in Sources */,
 				B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */,
 				B1FC2A161F286D9000719091 /* AppDelegate.m in Sources */,
 				B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */,
-				B1D6531E1F29959500FE33FE /* Model_ForFirst_info.m in Sources */,
 				B1FC2A131F286D9000719091 /* main.m in Sources */,
-				B1FC2A671F28735C00719091 /* Connector_Second.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +651,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/JSPatch",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Second",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -694,6 +675,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/JSPatch",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Second",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
