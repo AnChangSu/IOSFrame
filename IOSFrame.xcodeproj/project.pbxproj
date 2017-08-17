@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0BE1E7EE7B95F0AC73494150 /* libPods-IOSFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */; };
+		18EF736B1F45CDC400526A70 /* libFirst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736A1F45CDC400526A70 /* libFirst.a */; };
+		18EF736D1F45CDCA00526A70 /* libBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736C1F45CDCA00526A70 /* libBus.a */; };
+		18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736E1F45CDD200526A70 /* libAFNetworking.a */; };
 		B12E301D1F3D9A7E00F01F92 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B12E301C1F3D9A7E00F01F92 /* Podfile */; };
 		B1ADE7D71F4152D100CFD1B8 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ADE7D61F4152D100CFD1B8 /* libCordova.a */; };
 		B1ADE7D91F41531300CFD1B8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1ADE7D81F41531300CFD1B8 /* config.xml */; };
 		B1D6531B1F298E1300FE33FE /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */; };
 		B1D6531E1F29959500FE33FE /* Model_ForFirst_info.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */; };
 		B1D6537E1F29C36900FE33FE /* www in Resources */ = {isa = PBXBuildFile; fileRef = B1D6537D1F29C36900FE33FE /* www */; };
-		B1D653821F29C54B00FE33FE /* DetailPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D653811F29C54B00FE33FE /* DetailPlugin.m */; };
-		B1D653851F29CB7700FE33FE /* HLAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D653841F29CB7700FE33FE /* HLAudioPlayer.m */; };
 		B1D653871F29CB8200FE33FE /* shake_sound_male.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1D653861F29CB8200FE33FE /* shake_sound_male.wav */; };
 		B1D6538E1F29D60900FE33FE /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D6538C1F29D60900FE33FE /* JPEngine.m */; };
 		B1D6538F1F29D60900FE33FE /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = B1D6538D1F29D60900FE33FE /* JSPatch.js */; };
@@ -31,13 +32,10 @@
 		B1FC2A211F286D9000719091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FC2A1F1F286D9000719091 /* LaunchScreen.storyboard */; };
 		B1FC2A2C1F286D9100719091 /* IOSFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A2B1F286D9100719091 /* IOSFrameTests.m */; };
 		B1FC2A371F286D9100719091 /* IOSFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A361F286D9100719091 /* IOSFrameUITests.m */; };
-		B1FC2A541F286F4800719091 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A531F286F4800719091 /* FirstViewController.m */; };
 		B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A561F286F5B00719091 /* SecondViewController.m */; };
 		B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A591F286F6D00719091 /* ThirdViewController.m */; };
-		B1FC2A641F28733600719091 /* Connector_First.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A631F28733600719091 /* Connector_First.m */; };
 		B1FC2A671F28735C00719091 /* Connector_Second.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A661F28735C00719091 /* Connector_Second.m */; };
 		B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A691F28737500719091 /* Connector_Third.m */; };
-		B1FC2A711F28814700719091 /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A701F28814700719091 /* FirstDetailViewController.m */; };
 		B1FC2A751F2898D000719091 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A741F2898D000719091 /* UserInfo.m */; };
 		B1FF61EF1F4151FA00FA1F63 /* libFourth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E30571F3DB21900F01F92 /* libFourth.a */; };
 /* End PBXBuildFile section */
@@ -73,10 +71,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18EF736A1F45CDC400526A70 /* libFirst.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFirst.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/First/libFirst.a"; sourceTree = "<group>"; };
+		18EF736C1F45CDCA00526A70 /* libBus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBus.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/Bus/libBus.a"; sourceTree = "<group>"; };
+		18EF736E1F45CDD200526A70 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.release.xcconfig"; sourceTree = "<group>"; };
 		3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.debug.xcconfig"; sourceTree = "<group>"; };
-		B12E301C1F3D9A7E00F01F92 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B12E301C1F3D9A7E00F01F92 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B12E30571F3DB21900F01F92 /* libFourth.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFourth.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-dyhrvhzhvxjmnifdljoujwweotrz/Build/Products/Debug-iphonesimulator/Fourth/libFourth.a"; sourceTree = "<group>"; };
 		B1ADE7D61F4152D100CFD1B8 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCordova.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-dyhrvhzhvxjmnifdljoujwweotrz/Build/Products/Debug-iphonesimulator/Cordova/libCordova.a"; sourceTree = "<group>"; };
 		B1ADE7D81F41531300CFD1B8 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = CordovaLib/config.xml; sourceTree = SOURCE_ROOT; };
@@ -86,10 +87,6 @@
 		B1D6531D1F29959500FE33FE /* Model_ForFirst_info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model_ForFirst_info.m; sourceTree = "<group>"; };
 		B1D653771F29BD1400FE33FE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B1D6537D1F29C36900FE33FE /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		B1D653801F29C54B00FE33FE /* DetailPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPlugin.h; sourceTree = "<group>"; };
-		B1D653811F29C54B00FE33FE /* DetailPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPlugin.m; sourceTree = "<group>"; };
-		B1D653831F29CB7700FE33FE /* HLAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAudioPlayer.h; sourceTree = "<group>"; };
-		B1D653841F29CB7700FE33FE /* HLAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAudioPlayer.m; sourceTree = "<group>"; };
 		B1D653861F29CB8200FE33FE /* shake_sound_male.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shake_sound_male.wav; sourceTree = "<group>"; };
 		B1D6538B1F29D60900FE33FE /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		B1D6538C1F29D60900FE33FE /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
@@ -114,20 +111,14 @@
 		B1FC2A321F286D9100719091 /* IOSFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FC2A361F286D9100719091 /* IOSFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFrameUITests.m; sourceTree = "<group>"; };
 		B1FC2A381F286D9100719091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1FC2A521F286F4800719091 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B1FC2A531F286F4800719091 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B1FC2A551F286F5B00719091 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B1FC2A561F286F5B00719091 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B1FC2A581F286F6D00719091 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		B1FC2A591F286F6D00719091 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		B1FC2A621F28733600719091 /* Connector_First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_First.h; sourceTree = "<group>"; };
-		B1FC2A631F28733600719091 /* Connector_First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_First.m; sourceTree = "<group>"; };
 		B1FC2A651F28735C00719091 /* Connector_Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Second.h; sourceTree = "<group>"; };
 		B1FC2A661F28735C00719091 /* Connector_Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Second.m; sourceTree = "<group>"; };
 		B1FC2A681F28737500719091 /* Connector_Third.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Third.h; sourceTree = "<group>"; };
 		B1FC2A691F28737500719091 /* Connector_Third.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Third.m; sourceTree = "<group>"; };
-		B1FC2A6F1F28814700719091 /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
-		B1FC2A701F28814700719091 /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
 		B1FC2A731F2898D000719091 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		B1FC2A741F2898D000719091 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		B1FC2A761F289AC600719091 /* ModelUserInfoItemPrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUserInfoItemPrt.h; sourceTree = "<group>"; };
@@ -139,6 +130,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */,
+				18EF736D1F45CDCA00526A70 /* libBus.a in Frameworks */,
+				18EF736B1F45CDC400526A70 /* libFirst.a in Frameworks */,
 				B1ADE7D71F4152D100CFD1B8 /* libCordova.a in Frameworks */,
 				B1FF61EF1F4151FA00FA1F63 /* libFourth.a in Frameworks */,
 				B1D6542A1F29D8BE00FE33FE /* libz.tbd in Frameworks */,
@@ -174,15 +168,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B1D6537F1F29C40E00FE33FE /* DetailPlugin */ = {
-			isa = PBXGroup;
-			children = (
-				B1D653801F29C54B00FE33FE /* DetailPlugin.h */,
-				B1D653811F29C54B00FE33FE /* DetailPlugin.m */,
-			);
-			name = DetailPlugin;
-			sourceTree = "<group>";
-		};
 		B1D6538A1F29D60900FE33FE /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +181,9 @@
 		B1D654211F29D6EE00FE33FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18EF736E1F45CDD200526A70 /* libAFNetworking.a */,
+				18EF736C1F45CDCA00526A70 /* libBus.a */,
+				18EF736A1F45CDC400526A70 /* libFirst.a */,
 				B1ADE7D61F4152D100CFD1B8 /* libCordova.a */,
 				B12E30571F3DB21900F01F92 /* libFourth.a */,
 				B1D654291F29D8BE00FE33FE /* libz.tbd */,
@@ -243,8 +231,6 @@
 				B1FC2A721F28988900719091 /* model */,
 				B1D653191F298E1300FE33FE /* UIView+LayoutMethods.h */,
 				B1D6531A1F298E1300FE33FE /* UIView+LayoutMethods.m */,
-				B1D653831F29CB7700FE33FE /* HLAudioPlayer.h */,
-				B1D653841F29CB7700FE33FE /* HLAudioPlayer.m */,
 				B12E301C1F3D9A7E00F01F92 /* Podfile */,
 				B1FC2A1A1F286D9000719091 /* Main.storyboard */,
 				B1FC2A1D1F286D9000719091 /* Assets.xcassets */,
@@ -289,13 +275,6 @@
 		B1FC2A5E1F2872A700719091 /* FirstGroup */ = {
 			isa = PBXGroup;
 			children = (
-				B1FC2A621F28733600719091 /* Connector_First.h */,
-				B1FC2A631F28733600719091 /* Connector_First.m */,
-				B1FC2A521F286F4800719091 /* FirstViewController.h */,
-				B1FC2A531F286F4800719091 /* FirstViewController.m */,
-				B1D6537F1F29C40E00FE33FE /* DetailPlugin */,
-				B1FC2A6F1F28814700719091 /* FirstDetailViewController.h */,
-				B1FC2A701F28814700719091 /* FirstDetailViewController.m */,
 			);
 			name = FirstGroup;
 			sourceTree = "<group>";
@@ -496,7 +475,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B79B58FFB4B05C9333F6DE6A /* [CP] Copy Pods Resources */ = {
@@ -536,13 +515,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1D653821F29C54B00FE33FE /* DetailPlugin.m in Sources */,
-				B1D653851F29CB7700FE33FE /* HLAudioPlayer.m in Sources */,
-				B1FC2A711F28814700719091 /* FirstDetailViewController.m in Sources */,
 				B1FC2A751F2898D000719091 /* UserInfo.m in Sources */,
 				B1FC2A571F286F5B00719091 /* SecondViewController.m in Sources */,
 				B1FC2A191F286D9000719091 /* ViewController.m in Sources */,
-				B1FC2A641F28733600719091 /* Connector_First.m in Sources */,
 				B1D6531B1F298E1300FE33FE /* UIView+LayoutMethods.m in Sources */,
 				B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */,
 				B1FC2A161F286D9000719091 /* AppDelegate.m in Sources */,
@@ -550,7 +525,6 @@
 				B1D6531E1F29959500FE33FE /* Model_ForFirst_info.m in Sources */,
 				B1FC2A131F286D9000719091 /* main.m in Sources */,
 				B1D6538E1F29D60900FE33FE /* JPEngine.m in Sources */,
-				B1FC2A541F286F4800719091 /* FirstViewController.m in Sources */,
 				B1FC2A671F28735C00719091 /* Connector_Second.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -690,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

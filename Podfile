@@ -6,7 +6,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'IOSFrame' do
 
-pod "Fourth"
+pod 'Bus'
+
+pod 'First'
+
+pod 'Fourth'
 
 pod 'Cordova', '~> 4.4.0'
 
