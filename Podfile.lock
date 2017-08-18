@@ -30,6 +30,9 @@ PODS:
     - AFNetworking
     - Bus
     - Cordova
+  - Third (0.0.1):
+    - Bus
+    - JSPatch (~> 1.1.3)
 
 DEPENDENCIES:
   - Bus
@@ -38,6 +41,7 @@ DEPENDENCIES:
   - Fourth
   - JSPatch (~> 1.1.3)
   - Second
+  - Third
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -47,7 +51,8 @@ SPEC CHECKSUMS:
   Fourth: 6a4b33c11646af1299b8024d90a7f74b494fa7b7
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   Second: 2a10f7361f09d53814c58d1bdd37126e5f891c43
+  Third: 19118b33135e4674e69ec04ebe5982e6c8506b48
 
-PODFILE CHECKSUM: f03be9061ef8e2647774660157aa76660a8ce95e
+PODFILE CHECKSUM: 9b63e3e9e910c538854df18cd0792320d8baf96f
 
 COCOAPODS: 1.2.0

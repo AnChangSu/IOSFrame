@@ -13,6 +13,7 @@
 		18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF736E1F45CDD200526A70 /* libAFNetworking.a */; };
 		18EF73791F45D8B300526A70 /* libJSPatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF73781F45D8B300526A70 /* libJSPatch.a */; };
 		18EF73D81F45FF8E00526A70 /* libSecond.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF73D71F45FF8E00526A70 /* libSecond.a */; };
+		18EF746A1F468A2500526A70 /* libThird.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EF74691F468A2500526A70 /* libThird.a */; };
 		B12E301D1F3D9A7E00F01F92 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B12E301C1F3D9A7E00F01F92 /* Podfile */; };
 		B1ADE7D71F4152D100CFD1B8 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ADE7D61F4152D100CFD1B8 /* libCordova.a */; };
 		B1ADE7D91F41531300CFD1B8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = B1ADE7D81F41531300CFD1B8 /* config.xml */; };
@@ -30,8 +31,6 @@
 		B1FC2A211F286D9000719091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FC2A1F1F286D9000719091 /* LaunchScreen.storyboard */; };
 		B1FC2A2C1F286D9100719091 /* IOSFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A2B1F286D9100719091 /* IOSFrameTests.m */; };
 		B1FC2A371F286D9100719091 /* IOSFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A361F286D9100719091 /* IOSFrameUITests.m */; };
-		B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A591F286F6D00719091 /* ThirdViewController.m */; };
-		B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A691F28737500719091 /* Connector_Third.m */; };
 		B1FC2A751F2898D000719091 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FC2A741F2898D000719091 /* UserInfo.m */; };
 		B1FF61EF1F4151FA00FA1F63 /* libFourth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B12E30571F3DB21900F01F92 /* libFourth.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +71,7 @@
 		18EF736E1F45CDD200526A70 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../../../Library/Developer/Xcode/DerivedData/IOSFrame-fqnvdkdwbrmxztckbevclmacsmqt/Build/Products/Debug-iphonesimulator/AFNetworking/libAFNetworking.a"; sourceTree = "<group>"; };
 		18EF73781F45D8B300526A70 /* libJSPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSPatch.a; path = "Pods/../build/Debug-iphoneos/JSPatch/libJSPatch.a"; sourceTree = "<group>"; };
 		18EF73D71F45FF8E00526A70 /* libSecond.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSecond.a; path = "Pods/../build/Debug-iphoneos/Second/libSecond.a"; sourceTree = "<group>"; };
+		18EF74691F468A2500526A70 /* libThird.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libThird.a; path = "Pods/../build/Debug-iphoneos/Third/libThird.a"; sourceTree = "<group>"; };
 		1F027E93B33E56EAB3F5E7FD /* Pods-IOSFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.release.xcconfig"; sourceTree = "<group>"; };
 		3A7F8EDE800338EDB9BCEBC4 /* libPods-IOSFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOSFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5872E193B9E2DC2DCD09B56 /* Pods-IOSFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSFrame/Pods-IOSFrame.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,10 +102,6 @@
 		B1FC2A321F286D9100719091 /* IOSFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FC2A361F286D9100719091 /* IOSFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSFrameUITests.m; sourceTree = "<group>"; };
 		B1FC2A381F286D9100719091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1FC2A581F286F6D00719091 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		B1FC2A591F286F6D00719091 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
-		B1FC2A681F28737500719091 /* Connector_Third.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connector_Third.h; sourceTree = "<group>"; };
-		B1FC2A691F28737500719091 /* Connector_Third.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connector_Third.m; sourceTree = "<group>"; };
 		B1FC2A731F2898D000719091 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
 		B1FC2A741F2898D000719091 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		B1FC2A761F289AC600719091 /* ModelUserInfoItemPrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelUserInfoItemPrt.h; sourceTree = "<group>"; };
@@ -117,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EF746A1F468A2500526A70 /* libThird.a in Frameworks */,
 				18EF73D81F45FF8E00526A70 /* libSecond.a in Frameworks */,
 				18EF73791F45D8B300526A70 /* libJSPatch.a in Frameworks */,
 				18EF736F1F45CDD200526A70 /* libAFNetworking.a in Frameworks */,
@@ -160,6 +157,7 @@
 		B1D654211F29D6EE00FE33FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18EF74691F468A2500526A70 /* libThird.a */,
 				18EF73D71F45FF8E00526A70 /* libSecond.a */,
 				18EF73781F45D8B300526A70 /* libJSPatch.a */,
 				18EF736E1F45CDD200526A70 /* libAFNetworking.a */,
@@ -267,10 +265,6 @@
 		B1FC2A601F2872CD00719091 /* ThirdGroup */ = {
 			isa = PBXGroup;
 			children = (
-				B1FC2A681F28737500719091 /* Connector_Third.h */,
-				B1FC2A691F28737500719091 /* Connector_Third.m */,
-				B1FC2A581F286F6D00719091 /* ThirdViewController.h */,
-				B1FC2A591F286F6D00719091 /* ThirdViewController.m */,
 			);
 			name = ThirdGroup;
 			sourceTree = "<group>";
@@ -488,9 +482,7 @@
 			files = (
 				B1FC2A751F2898D000719091 /* UserInfo.m in Sources */,
 				B1FC2A191F286D9000719091 /* ViewController.m in Sources */,
-				B1FC2A6A1F28737500719091 /* Connector_Third.m in Sources */,
 				B1FC2A161F286D9000719091 /* AppDelegate.m in Sources */,
-				B1FC2A5A1F286F6D00719091 /* ThirdViewController.m in Sources */,
 				B1FC2A131F286D9000719091 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +644,7 @@
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/JSPatch",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Second",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Third",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -676,6 +669,7 @@
 					"$(PROJECT_DIR)/Extensions/JPLibffi/libffi",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/JSPatch",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Second",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Third",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
