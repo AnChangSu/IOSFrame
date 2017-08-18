@@ -94,6 +94,7 @@
             controller.userInfo.name = item.name;
             controller.userInfo.school = item.school;
             controller.userInfo.token = item.token;
+            [controller updateView];
         }
     }
     

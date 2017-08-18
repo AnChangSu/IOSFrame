@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Bus (0.0.4)
   - Cordova (4.4.0)
-  - First (0.1.0):
+  - First (0.1.2):
     - AFNetworking
     - Bus (~> 0.0.4)
     - Cordova
@@ -47,7 +47,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Bus: 750be2de6cf7b8918eaf69475bf5a7993aac415a
   Cordova: 561576155c420c54441d99b855de12c6e7b51088
-  First: 34b3228b2f736580c6fcb5e9e0f46bd1f0e6ce72
+  First: 8f72c09a4f095cfc4616078a803c20b76e312036
   Fourth: 6a4b33c11646af1299b8024d90a7f74b494fa7b7
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   Second: 2a10f7361f09d53814c58d1bdd37126e5f891c43

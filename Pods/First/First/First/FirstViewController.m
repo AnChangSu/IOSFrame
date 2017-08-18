@@ -13,6 +13,7 @@
 @interface FirstViewController ()
 
 @property (nonatomic,strong) UIButton *jumpButton;
+@property (nonatomic,strong) UILabel *userInfoLabel;
 
 @end
 
@@ -20,12 +21,14 @@
 
 @synthesize jumpButton = _jumpButton;
 @synthesize userInfo = _userInfo;
+@synthesize userInfoLabel = _userInfoLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationItem.title = @"first";
     [self.view addSubview:self.jumpButton];
+    [self.view addSubview:self.userInfoLabel];
     // Do any additional setup after loading the view.
 }
 
@@ -50,6 +53,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)updateView
+{
+    self.userInfoLabel.text = [self.userInfo description];
+}
+
+-(UILabel*)userInfoLabel{
+    if ( _userInfoLabel == nil ) {
+        _userInfoLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 200, 30)];
+        _userInfoLabel.backgroundColor = [UIColor blackColor];
+        _userInfoLabel.textColor = [UIColor whiteColor];
+    }
+    
+    return _userInfoLabel;
+}
 
 -(FirstViewUserInfo*)userInfo{
     if ( _userInfo == nil ) {

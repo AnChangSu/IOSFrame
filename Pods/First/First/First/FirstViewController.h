@@ -13,4 +13,6 @@
 
 @property(nonatomic,strong) FirstViewUserInfo *userInfo;
 
+-(void)updateView;
+
 @end
