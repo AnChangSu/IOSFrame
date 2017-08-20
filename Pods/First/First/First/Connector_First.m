@@ -83,19 +83,33 @@
 
 #pragma mark - model UserInfo提供的服务方法
 
+-(NSArray *)findController{
+    UITabBarController *controller = (UITabBarController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+    UINavigationController *naviController = [controller.viewControllers objectAtIndex:0];
+    
+    
+    return naviController.viewControllers;
+}
+
 -(void)modelUserInfo_deliveAprotocol:(nonnull id<ModelUserInfoPrt>)item{
     NSString *showText = [item description];
     
-    if ( [self.currentController class] == [FirstViewController class] ) {
-        FirstViewController *controller = (FirstViewController*)self.currentController;
-        if( [item isKindOfClass:[FirstViewUserInfo class]] ){
-            controller.userInfo = (FirstViewUserInfo *)item;
-        }else{
-            controller.userInfo.name = item.name;
-            controller.userInfo.school = item.school;
-            controller.userInfo.token = item.token;
-            [controller updateView];
+    NSArray *array = [self findController];
+    for ( int i=0 ; i<[array count]; i++) {
+        UIViewController *tempController = [array objectAtIndex:i];
+        
+        if ( [tempController isKindOfClass:[FirstViewController class]] ) {
+            FirstViewController *controller = (FirstViewController*)tempController;
+            if( [item isKindOfClass:[FirstViewUserInfo class]] ){
+                controller.userInfo = (FirstViewUserInfo *)item;
+            }else{
+                controller.userInfo.name = item.name;
+                controller.userInfo.school = item.school;
+                controller.userInfo.token = item.token;
+                [controller updateView];
+            }
         }
+
     }
     
     UIAlertAction *cancelAlertAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
